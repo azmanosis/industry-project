@@ -1,0 +1,17 @@
+@use "../../styles/partials/index" as *;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  @include nomargin_nopadding;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include nomargin_nopadding;
+  }
+}
