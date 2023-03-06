@@ -1,0 +1,34 @@
+@use "../../styles/partials/index" as *;
+
+.dashboard {
+  //   width: 100%;
+  //   background-color: $darkblue;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0 0 7.375rem;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    &--text {
+      color: $white;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    &--image {
+      width: 141px;
+      height: 141px;
+    }
+
+    &--text {
+      color: $white;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
