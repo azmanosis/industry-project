@@ -1,17 +1,95 @@
 @use "../../styles/partials/index" as *;
 
-footer {
+.footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
+  flex-direction: row;
+  height: 200px;
   width: 100%;
+  background-color: $white;
   @include nomargin_nopadding;
 
-  &__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__logo {
+    width: 41px;
+    height: 41px;
     @include nomargin_nopadding;
+    margin: 1rem 0 0 8.6875rem;
+  }
+
+  &__credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 1.5rem;
+
+    &--game {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 0 0 0;
+
+      &--item {
+        background: none;
+        border: none;
+        text-transform: capitalize;
+        font-family: dmedium;
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 0 0.8rem 0 0;
+      }
+    }
+
+    &--accessibility {
+      display: flex;
+      flex-direction: row;
+
+      &--item {
+        background: none;
+        border: none;
+        text-transform: capitalize;
+        font-family: dmedium;
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 1rem 0.8rem 0 0;
+      }
+    }
+
+    &--legal {
+      display: flex;
+      flex-direction: row;
+
+      &--item {
+        background: none;
+        border: none;
+        text-transform: capitalize;
+        font-family: dregular;
+        font-size: 0.6rem;
+        padding: 0;
+        margin: 1.5rem 0.5rem 0 0;
+      }
+    }
+
+    &--service {
+      display: flex;
+      flex-direction: row;
+
+      &--item {
+        background: none;
+        border: none;
+        text-transform: capitalize;
+        font-family: dregular;
+        font-size: 0.6rem;
+        padding: 0;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+
+    &--copyright {
+      margin: 0;
+
+      &--legals {
+        font-family: dmedium;
+        text-transform: capitalize;
+        margin: 0 0 0.5rem 0;
+      }
+    }
   }
 }
