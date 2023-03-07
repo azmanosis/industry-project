@@ -1,6 +1,8 @@
 import './Footer.scss';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/icons/logo.svg';
+import Flag from '../../assets/icons/flag.svg';
+import Arrow from '../../assets/icons/arrow.svg';
 
 function Footer() {
     return (
@@ -60,6 +62,16 @@ function Footer() {
                     </div>
                     <div className="footer__credentials--copyright">
                         <p className="footer__credentials--copyright--legals">2023 electronic arts inc.</p>
+                    </div>
+                </div>
+                <div className="footer__language">
+                    <div className="footer__language--box">
+                        <p className="footer__language--box--text">Language</p>
+                        <div className="footer__language--box--info">
+                            <img className="footer__language--box--info--image" src={Flag} alt=""></img>
+                            <p className="footer__language--box--info--canada">Canada (EN)</p>
+                            <img className="footer__language--box--info--arrow" src={Arrow} alt="arrow"></img>
+                        </div>
                     </div>
                 </div>
             </div>

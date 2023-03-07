@@ -5,7 +5,7 @@
   flex-direction: row;
   height: 200px;
   width: 100%;
-  background-color: $white;
+  background-color: $grey;
   @include nomargin_nopadding;
 
   &__logo {
@@ -33,7 +33,8 @@
         font-family: dmedium;
         font-size: 0.9rem;
         padding: 0;
-        margin: 0 0.8rem 0 0;
+        margin: 0 5rem 0 0;
+        color: $white;
       }
     }
 
@@ -48,7 +49,8 @@
         font-family: dmedium;
         font-size: 0.9rem;
         padding: 0;
-        margin: 1rem 0.8rem 0 0;
+        margin: 1rem 5.5rem 0 0;
+        color: $white;
       }
     }
 
@@ -63,7 +65,8 @@
         font-family: dregular;
         font-size: 0.6rem;
         padding: 0;
-        margin: 1.5rem 0.5rem 0 0;
+        margin: 2rem 5rem 0 0;
+        color: $white;
       }
     }
 
@@ -78,7 +81,8 @@
         font-family: dregular;
         font-size: 0.6rem;
         padding: 0;
-        margin: 0 0.5rem 0 0;
+        margin: 0 5.2rem 0 0;
+        color: $white;
       }
     }
 
@@ -86,9 +90,51 @@
       margin: 0;
 
       &--legals {
-        font-family: dmedium;
+        font-family: dregular;
+        font-size: 0.6rem;
         text-transform: capitalize;
         margin: 0 0 0.5rem 0;
+        color: $white;
+      }
+    }
+  }
+
+  &__language {
+    margin: 1rem 2rem 0 5rem;
+
+    &--box {
+      width: 191px;
+      height: 60px;
+      border-radius: 3px;
+      border: solid 2px #bababa;
+
+      &--text {
+        font-size: 15px;
+        color: $white;
+        font-family: dregular;
+        margin: 0.5rem 0 0 1rem;
+      }
+
+      &--info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &--image {
+          margin: 0.5rem 0 0 1rem;
+          width: 18px;
+          height: 10.7px;
+        }
+
+        &--canada {
+          font-size: 15px;
+          margin: 0.5rem 0 0 1rem;
+          color: $white;
+        }
+
+        &--arrow {
+          margin: 0.5rem 0 0 1rem;
+        }
       }
     }
   }
