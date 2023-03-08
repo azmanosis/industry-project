@@ -63,6 +63,7 @@
         font-family: dmedium;
         color: $white;
         margin: 0 1rem;
+        border-bottom: solid 0.25rem $grey;
 
         &:hover {
           border-bottom: solid 0.25rem $darkblue;

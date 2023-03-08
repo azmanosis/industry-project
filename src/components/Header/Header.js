@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header__logo">
-                <Link to="/">
+                <Link to="https://www.ea.com/en-ca" target="_blank">
                     <div>
                         <img src={Logo} className="header__logo--img" alt=""></img>
                     </div>
@@ -20,7 +20,7 @@ function Header() {
                 </input>
                 <div className="header__subject--link">
                     <Link to="/">
-                        <button className="header__subject--link--dashboard">dashboard</button>
+                        <button className="header__subject--link--dashboard">EA Home</button>
                     </Link>
                     <Link to="/">
                         <button className="header__subject--link--dashboard">support</button>

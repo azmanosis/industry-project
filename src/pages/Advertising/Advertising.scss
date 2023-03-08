@@ -1,11 +1,11 @@
 @use "../../styles/partials/index" as *;
 
-.dashboard {
+.dashboards {
   margin: 1rem 0 2.4375rem 7.375rem;
   display: flex;
   flex-direction: row;
 
-  &__text {
+  &__texts {
     color: $white;
     font-family: dbold;
     font-size: 40px;
@@ -13,7 +13,7 @@
     margin-top: 1.875rem;
   }
 
-  &__alert {
+  &__alerts {
     width: 547px;
     height: 43px;
     border-radius: 10px;
@@ -24,19 +24,19 @@
     justify-content: center;
     align-items: center;
 
-    &--icon {
+    &--icons {
       margin: 0;
       width: 25px;
       height: 25px;
     }
 
-    &--text {
+    &--texts {
       margin: 0 0 0 23px;
       color: $white;
       font-family: dbold;
     }
 
-    &--open {
+    &--opens {
       margin: 0 0 0 76px;
       text-transform: uppercase;
       color: $white;
@@ -50,41 +50,50 @@
       }
     }
 
-    &--close {
+    &--closes {
       position: relative;
       top: -30px;
       right: -32px;
       cursor: pointer;
     }
   }
+
+  &__news {
+    border-radius: 15px;
+    background-color: $grey;
+    border: none;
+    width: 135px;
+    height: 59px;
+    font-size: 30px;
+    font-family: dbold;
+    color: $white;
+    margin: 1rem 0 0 0;
+  }
 }
 
-.profile {
+.profiles {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
   margin: 0 0 0 7.375rem;
 
-  &__header {
+  &__headers {
     display: flex;
-    // justify-content: center;
     flex-direction: column;
-    // align-items: center;
     width: 237px;
-    margin: 0;
+    margin: 0 0 0 0;
 
-    &--top {
+    &--tops {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
-      &--image {
+      &--images {
         width: 111px;
         height: 111px;
       }
 
-      &--text {
+      &--texts {
         font-family: dbold;
         @include nomargin-nopadding;
         text-transform: uppercase;
@@ -92,24 +101,24 @@
       }
     }
 
-    &--management {
+    &--managements {
       margin: 1.3125rem 0 0 0;
 
-      &--text {
+      &--texts {
         font-family: dbold;
         font-size: 26px;
         color: $white;
         @include nomargin-nopadding;
       }
 
-      &--panel {
+      &--panels {
         height: 422px;
         border-radius: 15px;
         background-color: $grey;
         margin: 7px 0 67px 0;
         padding: 15px 0 0 0;
 
-        &--link {
+        &--links {
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -125,24 +134,18 @@
             border-left: solid 3px #f142a7;
           }
 
-          &--image {
+          &--images {
             margin: 0 8px 0 16px;
             width: 22px;
             height: 16px;
           }
 
-          &--text {
+          &--texts {
             color: $white;
             border: none;
             background: none;
             text-transform: uppercase;
             cursor: pointer;
-          }
-
-          &--alert {
-            width: 25px;
-            height: 25px;
-            margin: 0 0 0 11px;
           }
         }
 
@@ -162,149 +165,94 @@
     }
   }
 
-  &__revenue {
-    margin: 0 0 0 20px;
-
-    &--stats {
-      display: flex;
-      flex-direction: row;
-
-      &--a {
-        display: flex;
-        flex-direction: column;
-
-        &--text {
-          color: $white;
-          font-family: dbold;
-          font-size: 26px;
-          margin: 0;
-          height: 44px;
-        }
-
-        &--img {
-          margin: 0;
-        }
-
-        &--result {
-          display: flex;
-          justify-content: center;
-
-          &--unit {
-            color: $othergrey;
-          }
-        }
-      }
-
-      &--b {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 0 1.2rem;
-
-        &--row {
-          display: flex;
-          flex-direction: row;
-          width: 380px;
-          height: 40px;
-
-          &--text {
-            color: $white;
-            width: 235px;
-            font-family: dbold;
-            font-size: 26px;
-            @include nomargin-nopadding;
-          }
-
-          &--date {
-            color: $othergrey;
-            font-family: dbold;
-            width: 103px;
-            @include nomargin-nopadding;
-            font-size: 12px;
-            margin: 0.9rem 0 0 31px;
-          }
-        }
-
-        &--img {
-          margin: 0;
-        }
-      }
-    }
-
-    &--upcoming {
-      margin: 0;
-
-      &--text {
-        font-family: dbold;
-        font-size: 28px;
-        color: $white;
-        text-transform: capitalize;
-        margin: 0 0 1rem 0;
-      }
-    }
-  }
-
-  &__mystats {
-    width: 184px;
-
-    &--text {
-      font-family: dbold;
-      font-size: 26px;
-      color: $white;
-      @include nomargin-nopadding;
-    }
+  &__advertising {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 68px;
 
     &--box {
       background-color: $grey;
-      width: 184px;
-      height: 284px;
-      margin: 7px 0 0 0;
-      border-radius: 15px;
-      padding: 13px 0 0 23.5px;
+      width: 863px;
+      height: 69px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      margin: 0 0 25px 0;
 
-      &--a {
+      &--text {
+        font-family: dbold;
+        font-size: 25px;
         color: $white;
-        font-family: dbold;
-        font-size: 10px;
         @include nomargin-nopadding;
-        text-transform: uppercase;
+        margin: 0 15.3125rem 0 24px;
       }
 
-      &--b {
-        color: #cedeff;
+      &--texted {
         font-family: dbold;
-        font-size: 18px;
-        height: 23px;
-        margin: 0 0 9px 0;
-        padding: 0;
+        font-size: 25px;
+        color: $white;
+        @include nomargin-nopadding;
+        margin: 0 7.2rem 0 24px;
+      }
+
+      &--button {
+        width: 93px;
+        height: 32px;
+        border-radius: 10px;
+        background-color: #5a5b6d;
+        border: none;
+        font-size: 15px;
+        font-family: dbold;
+        color: $white;
+        margin: 0 35px 0 0;
+      }
+
+      &--alert {
+        width: 29px;
+        height: 29px;
+        position: relative;
+        left: 30px;
+        margin-right: -50px;
       }
     }
 
-    &--stream {
+    &--boxed {
       background-color: $grey;
-      border: none;
+      width: 863px;
+      height: 69px;
       border-radius: 10px;
-      width: 184px;
-      height: 50px;
-      margin: 41px 0 0 0;
-      color: $white;
-      font-family: dbold;
-      font-size: 20px;
-      text-transform: capitalize;
-      cursor: pointer;
-    }
+      display: flex;
+      align-items: center;
+      margin: 0 0 25px 0;
+      border-left: solid 4px #cf2e8b;
 
-    &--streamed {
-      background-color: $grey;
-      border: none;
-      border-radius: 10px;
-      width: 184px;
-      height: 50px;
-      margin: 1rem 0 0 0;
-      color: $white;
-      font-family: dbold;
-      font-size: 20px;
-      text-transform: capitalize;
-      cursor: pointer;
+      &--texting {
+        font-family: dbold;
+        font-size: 25px;
+        color: $white;
+        @include nomargin-nopadding;
+        margin: 0 10.4rem 0 24px;
+      }
+
+      &--button {
+        width: 93px;
+        height: 32px;
+        border-radius: 10px;
+        background-color: #5a5b6d;
+        border: none;
+        font-size: 15px;
+        font-family: dbold;
+        color: $white;
+        margin: 0 35px 0 0;
+      }
+
+      &--alert {
+        width: 29px;
+        height: 29px;
+        position: relative;
+        left: 30px;
+        margin-right: -50px;
+      }
     }
   }
 }
