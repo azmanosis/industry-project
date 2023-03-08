@@ -68,6 +68,7 @@
     font-family: dbold;
     color: $white;
     margin: 1rem 0 0 0;
+    cursor: pointer;
   }
 }
 
@@ -75,6 +76,7 @@
   display: flex;
   flex-direction: row;
   margin: 0 0 0 7.375rem;
+  height: 50rem;
 
   &__headers {
     display: flex;
@@ -168,6 +170,7 @@
   &__advertising {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 0 0 68px;
 
     &--box {
@@ -200,11 +203,20 @@
         height: 32px;
         border-radius: 10px;
         background-color: #5a5b6d;
-        border: none;
+        border: solid 3px #5a5b6d;
         font-size: 15px;
         font-family: dbold;
         color: $white;
         margin: 0 35px 0 0;
+        cursor: pointer;
+
+        &:hover {
+          border: solid 3px #cf2e8b;
+        }
+      }
+
+      &--up {
+        cursor: pointer;
       }
 
       &--alert {
@@ -239,11 +251,16 @@
         height: 32px;
         border-radius: 10px;
         background-color: #5a5b6d;
-        border: none;
+        border: solid 3px #5a5b6d;
         font-size: 15px;
         font-family: dbold;
         color: $white;
         margin: 0 35px 0 0;
+        cursor: pointer;
+
+        &:hover {
+          border: solid 3px #cf2e8b;
+        }
       }
 
       &--alert {
@@ -252,6 +269,158 @@
         position: relative;
         left: 30px;
         margin-right: -50px;
+      }
+    }
+
+    &--back {
+      width: 776px;
+      height: 315px;
+      background-color: $grey;
+      border-radius: 10px;
+
+      &--first {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 19px 0 0 33px;
+
+        &--you {
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          &--text {
+            font-family: dbold;
+            color: $white;
+            font-size: 25px;
+            @include nomargin-nopadding;
+          }
+
+          &--image {
+            width: 29px;
+            height: 29px;
+            margin: 0 0 0 8px;
+          }
+        }
+
+        &--text {
+          color: $white;
+          font-family: dregular;
+          font-size: 15px;
+          @include nomargin-nopadding;
+
+          &--bold {
+            font-family: dbold;
+            font-size: 15px;
+          }
+        }
+
+        &--image {
+          width: 14px;
+          height: 14px;
+          margin: 0 28px 0 0;
+        }
+      }
+
+      &--second {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 0 33px;
+
+        &--renew {
+          display: flex;
+          flex-direction: column;
+          height: 15rem;
+          justify-content: center;
+
+          &--button {
+            background-color: $othergrey;
+            border-radius: 15px;
+            border: none;
+            height: 49px;
+            width: 134px;
+            font-family: dbold;
+            font-size: 19.3px;
+            color: $white;
+            margin: 0 0 8px 0;
+            cursor: pointer;
+          }
+        }
+
+        &--box {
+          height: 242px;
+          width: 525px;
+          background-color: rgba(217, 217, 217, 0.1);
+          margin: 0 48px 0 0;
+          border-radius: 15px;
+
+          &--chart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--graph {
+              height: 136px;
+              width: 456px;
+              margin: 19px 0 0 0;
+            }
+
+            &--impressions {
+              display: flex;
+              flex-direction: row;
+              gap: 8px;
+              margin: 18.6px 0 0 0;
+
+              &--button {
+                background-color: $darkblue;
+                color: $white;
+                border-radius: 15px;
+                border: solid 3px $darkblue;
+                font-family: dbold;
+                font-size: 14px;
+                width: 6.5rem;
+                height: 44px;
+                text-transform: capitalize;
+
+                &:hover {
+                  border: solid 3px #cf2e8b;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--third {
+      height: 69px;
+      width: 776px;
+      border-radius: 15px;
+      background-color: $grey;
+      margin: 20px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--text {
+        margin: 0 0 0 33px;
+        font-family: dbold;
+        font-size: 25px;
+        color: $white;
+      }
+
+      &--image {
+        height: 14px;
+        width: 14px;
+        margin: 0 28px 0 0;
+        cursor: pointer;
       }
     }
   }

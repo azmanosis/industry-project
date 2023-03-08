@@ -14,6 +14,7 @@ import Copyright from '../../assets/icons/copyright.svg';
 import Settings from '../../assets/icons/settings.svg';
 import Up from '../../assets/icons/up.svg';
 import Down from '../../assets/icons/down.svg';
+import Graph from '../../assets/icons/graph.svg';
 
 function Advertising() {
     return (
@@ -81,25 +82,79 @@ function Advertising() {
                 <div className="profiles__advertising">
                     <div className="profiles__advertising--box">
                         <p className="profiles__advertising--box--text">SallyStreamer</p>
-                        <button className="profiles__advertising--box--button">YouTube</button>
-                        <button className="profiles__advertising--box--button">Facebook</button>
-                        <button className="profiles__advertising--box--button">TikTok</button>
-                        <img src={Up} alt="" />
+                        <Link to="https://www.youtube.com/" target="_blank">
+                            <button className="profiles__advertising--box--button">YouTube</button>
+                        </Link>
+                        <Link to="https://www.facebook.com/" target="_blank">
+                            <button className="profiles__advertising--box--button">Facebook</button>
+                        </Link>
+                        <Link to="https://www.tiktok.com/en/" target="_blank">
+                            <button className="profiles__advertising--box--button">TikTok</button>
+                        </Link>
+                        <img className="profiles__advertising--box--up" src={Up} alt="" />
                     </div>
                     <div className="profiles__advertising--box">
                         <p className="profiles__advertising--box--texted">SallyStreamer v.APRICOT</p>
-                        <button className="profiles__advertising--box--button">YouTube</button>
-                        <button className="profiles__advertising--box--button">Facebook</button>
-                        <button className="profiles__advertising--box--button">TikTok</button>
-                        <img src={Up} alt="" />
+                        <Link to="https://www.youtube.com/" target="_blank">
+                            <button className="profiles__advertising--box--button">YouTube</button>
+                        </Link>
+                        <Link to="https://www.facebook.com/" target="_blank">
+                            <button className="profiles__advertising--box--button">Facebook</button>
+                        </Link>
+                        <Link to="https://www.tiktok.com/en/" target="_blank">
+                            <button className="profiles__advertising--box--button">TikTok</button>
+                        </Link>
+                        <img className="profiles__advertising--box--up" src={Up} alt="" />
                     </div>
                     <div className="profiles__advertising--boxed">
                         <p className="profiles__advertising--boxed--texting">SallyStreamer v.ACIE</p>
-                        <button className="profiles__advertising--boxed--button">YouTube</button>
-                        <button className="profiles__advertising--boxed--button">Facebook</button>
-                        <button className="profiles__advertising--boxed--button">TikTok</button>
-                        <img src={Down} alt="" />
+                        <Link to="https://www.youtube.com/" target="_blank">
+                            <button className="profiles__advertising--boxed--button">YouTube</button>
+                        </Link>
+                        <Link to="https://www.facebook.com/" target="_blank">
+                            <button className="profiles__advertising--boxed--button">Facebook</button>
+                        </Link>
+                        <Link to="https://www.tiktok.com/en/" target="_blank">
+                            <button className="profiles__advertising--boxed--button">TikTok</button>
+                        </Link>
+                        <img className="profiles__advertising--box--up" src={Down} alt="" />
                         <img src={Alert} className="profiles__advertising--boxed--alert" alt="" />
+                    </div>
+                    <div className="profiles__advertising--back">
+                        <div className="profiles__advertising--back--first">
+                            <div className="profiles__advertising--back--first--you">
+                                <p className="profiles__advertising--back--first--you--text">YouTube</p>
+                                <img src={Alert} className="profiles__advertising--back--first--you--image" alt="" />
+                            </div>
+                            <p className="profiles__advertising--back--first--text">Your ad will expire in 3 days! <span className="profiles__advertising--back--first--text--bold">Renew</span> now!</p>
+                            <img className="profiles__advertising--back--first--image" src={Down} alt="" />
+                        </div>
+                        <div className="profiles__advertising--back--second">
+                            <div className="profiles__advertising--back--second--renew">
+                                <button className="profiles__advertising--back--second--renew--button">Renew</button>
+                                <button className="profiles__advertising--back--second--renew--button">Manage</button>
+                            </div>
+                            <div className="profiles__advertising--back--second--box">
+                                <div className="profiles__advertising--back--second--box--chart">
+                                    <img className="profiles__advertising--back--second--box--chart--graph" src={Graph} alt="" />
+                                    <div className="profiles__advertising--back--second--box--chart--impressions">
+                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
+                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
+                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="profiles__advertising--third">
+                        <p className="profiles__advertising--third--text">Facebook</p>
+                        <img className="profiles__advertising--third--image" src={Up} alt="" />
+                    </div>
+                    <div className="profiles__advertising--third">
+                        <p className="profiles__advertising--third--text">TikTok</p>
+                        <img className="profiles__advertising--third--image" src={Up} alt="" />
                     </div>
                 </div>
             </div>
