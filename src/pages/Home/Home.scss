@@ -16,7 +16,7 @@
   &__alert {
     width: 34.1875rem;
     height: 2.6875rem;
-    border-radius: 0.625rem;
+    border-radius: 0.9375rem;
     background-color: rgba(212, 152, 185, 0.53);
     margin: 1.8125rem 8.3125rem 0 3.1875rem;
     display: flex;
@@ -279,7 +279,7 @@
     &--stream {
       background-color: $grey;
       border: none;
-      border-radius: 0.625rem;
+      border-radius: 0.9375rem;
       width: 11.5rem;
       height: 3.125rem;
       margin: 2.5625rem 0 0 0;
@@ -293,7 +293,7 @@
     &--streamed {
       background-color: $grey;
       border: none;
-      border-radius: 0.625rem;
+      border-radius: 0.9375rem;
       width: 11.5rem;
       height: 3.125rem;
       margin: 1rem 0 0 0;

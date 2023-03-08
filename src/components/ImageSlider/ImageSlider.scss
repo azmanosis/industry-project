@@ -23,7 +23,7 @@
   overflow-x: scroll;
   display: flex;
   flex-direction: row;
-  border-radius: 0.8125rem;
+  border-radius: 0.9375rem;
   gap: 5%;
 
   &__item {
@@ -31,7 +31,7 @@
 
     &--image {
       width: 30rem;
-      border-radius: 0.8125rem;
+      border-radius: 0.9375rem;
     }
 
     &--column {

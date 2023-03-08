@@ -112,12 +112,16 @@ function Advertising() {
                     </div>
                     {isVisible &&
                         <div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">YouTube</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
                             <div className="profiles__advertising--back">
                                 <div className="profiles__advertising--back--first">
                                     <div className="profiles__advertising--back--first--you">
-                                        <p className="profiles__advertising--back--first--you--text">YouTube</p>
+                                        <p className="profiles__advertising--back--first--you--text">Facebook</p>
                                     </div>
-                                    <p className="profiles__advertising--back--first--text">Your <span className="profiles__advertising--back--first--text--bold">YouTube Account</span> is performing well!</p>
+                                    <p className="profiles__advertising--back--first--text">Your <span className="profiles__advertising--back--first--text--bold">Facebook Account</span> is performing well!</p>
                                     <img className="profiles__advertising--back--first--image" src={Down} alt="" />
                                 </div>
                                 <div className="profiles__advertising--back--second">
@@ -138,10 +142,6 @@ function Advertising() {
                                     </div>
                                 </div>
 
-                            </div>
-                            <div className="profiles__advertising--third">
-                                <p className="profiles__advertising--third--text">Facebook</p>
-                                <div className="profiles__advertising--third--image"></div>
                             </div>
                             <div className="profiles__advertising--third">
                                 <p className="profiles__advertising--third--text">TikTok</p>
