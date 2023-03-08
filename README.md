@@ -1,74 +1,15 @@
+# Industry-project
 
-# industry-project
+This project is challenge for collaboratively working with BrainStation discipline to come up with an advertsing focussed entirely on content creators in collaboration with Electronic Arts. The Web developemtn was entirely built in `React JS`.
 
-# Getting Started with Create React App
+## Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Collaboration among the different discipline of BrainStation, UX Desginers, Data Scientist and Web Developer, where each team gives their output for a website laid out as a challenge by the educators.
 
-## Available Scripts
+Each discipline provided their own unique skills to successfully implement the website we see here.
 
-In the project directory, you can run:
+The Data Scientist team provided the data and research websites required for a general scope of the project and where each data can be sourced to. What is the general perspective of clients and what information does a user look for in regards to content creation.
 
-### `npm start`
+The UX Designers team provided a general layout as well as an identity to the project, Here we see a streamer `SallyStreamer` as our main protagonist. She is a content creator who makes profits by showcasing her video game skills and her interest lie in playing games `Apex Legend, Fifa 2023, The Sims and BattleField` The Interface allows her to stream her content on multiple platform as well provide her with a website that shows her profits in real time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 5f20294 (Initialize project using Create React App)
+I as part of the Web Developer team built the website that was designed by the UX designers. The website uses modules of `SASS,` `react-router-dom` and `useStates`.
