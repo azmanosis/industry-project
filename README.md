@@ -1,8 +1,10 @@
 # Industry-project
 
+## EA Creator Hub
+
 This project is challenge for collaboratively working with BrainStation discipline to come up with an advertsing focussed entirely on content creators in collaboration with Electronic Arts. The Web developemtn was entirely built in `React JS`.
 
-## Challenge
+## The Challenge
 
 A Collaboration among the different discipline of BrainStation, UX Desginers, Data Scientist and Web Developer, where each team gives their output for a website laid out as a challenge by the educators.
 
