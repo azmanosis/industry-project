@@ -8,17 +8,17 @@
   &__texts {
     color: $white;
     font-family: dbold;
-    font-size: 40px;
+    font-size: 2.5rem;
     @include nomargin-nopadding;
     margin-top: 1.875rem;
   }
 
   &__alerts {
-    width: 547px;
-    height: 43px;
-    border-radius: 10px;
+    width: 34.1875rem;
+    height: 2.6875rem;
+    border-radius: 0.625rem;
     background-color: rgba(212, 152, 185, 0.53);
-    margin: 1.8125rem 133px 0 3.1875rem;
+    margin: 1.8125rem 8.3125rem 0 3.1875rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,18 +26,18 @@
 
     &--icons {
       margin: 0;
-      width: 25px;
-      height: 25px;
+      width: 1.5625rem;
+      height: 1.5625rem;
     }
 
     &--texts {
-      margin: 0 0 0 23px;
+      margin: 0 0 0 1.4375rem;
       color: $white;
       font-family: dbold;
     }
 
     &--opens {
-      margin: 0 0 0 76px;
+      margin: 0 0 0 4.75rem;
       text-transform: uppercase;
       color: $white;
       background: none;
@@ -52,19 +52,19 @@
 
     &--closes {
       position: relative;
-      top: -30px;
-      right: -32px;
+      top: -1.875rem;
+      right: -2rem;
       cursor: pointer;
     }
   }
 
   &__news {
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     background-color: $grey;
     border: none;
-    width: 135px;
-    height: 59px;
-    font-size: 30px;
+    width: 8.4375rem;
+    height: 3.6875rem;
+    font-size: 1.875rem;
     font-family: dbold;
     color: $white;
     margin: 1rem 0 0 0;
@@ -81,7 +81,7 @@
   &__headers {
     display: flex;
     flex-direction: column;
-    width: 237px;
+    width: 14.8125rem;
     margin: 0 0 0 0;
 
     &--tops {
@@ -91,8 +91,8 @@
       flex-direction: column;
 
       &--images {
-        width: 111px;
-        height: 111px;
+        width: 6.9375rem;
+        height: 6.9375rem;
       }
 
       &--texts {
@@ -108,24 +108,24 @@
 
       &--texts {
         font-family: dbold;
-        font-size: 26px;
+        font-size: 1.625rem;
         color: $white;
         @include nomargin-nopadding;
       }
 
       &--panels {
-        height: 422px;
-        border-radius: 15px;
+        height: 26.375rem;
+        border-radius: 0.0094rem;
         background-color: $grey;
-        margin: 7px 0 67px 0;
-        padding: 15px 0 0 0;
+        margin: 0.4375rem 0 4.1875rem 0;
+        padding: 0.9375rem 0 0 0;
 
         &--links {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: left;
-          height: 40px;
+          height: 2.5rem;
           margin: 4px 0 0 0;
           border-left: solid 3px $grey;
           text-decoration: none;
@@ -133,13 +133,13 @@
           &:hover {
             background-color: rgba(207, 46, 139, 0.5);
             cursor: pointer;
-            border-left: solid 3px #f142a7;
+            border-left: solid 3px $pink;
           }
 
           &--images {
-            margin: 0 8px 0 16px;
-            width: 22px;
-            height: 16px;
+            margin: 0 0.5rem 0 1rem;
+            width: 1.375rem;
+            height: 1rem;
           }
 
           &--texts {
@@ -156,9 +156,9 @@
           flex-direction: row;
           align-items: center;
           justify-content: left;
-          height: 40px;
+          height: 2.5rem;
           margin: 4px 0 0 0;
-          border-left: solid 3px #f142a7;
+          border-left: solid 3px $pink;
           background-color: rgba(207, 46, 139, 0.5);
           cursor: pointer;
           text-decoration: none;
@@ -171,126 +171,126 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 0 68px;
+    margin: 0 0 0 4.25rem;
 
     &--box {
       background-color: $grey;
-      width: 863px;
-      height: 69px;
-      border-radius: 10px;
+      width: 53.9375rem;
+      height: 4.3125rem;
+      border-radius: 0.625rem;
       display: flex;
       align-items: center;
-      margin: 0 0 25px 0;
+      margin: 0 0 1.5625rem 0;
 
       &--text {
         font-family: dbold;
-        font-size: 25px;
+        font-size: 1.5625rem;
         color: $white;
         @include nomargin-nopadding;
-        margin: 0 15.3125rem 0 24px;
+        margin: 0 15.3125rem 0 1.5rem;
       }
 
       &--texted {
         font-family: dbold;
-        font-size: 25px;
+        font-size: 1.5625rem;
         color: $white;
         @include nomargin-nopadding;
-        margin: 0 7.2rem 0 24px;
+        margin: 0 7.2rem 0 1.5rem;
       }
 
       &--button {
-        width: 93px;
-        height: 32px;
-        border-radius: 10px;
-        background-color: #5a5b6d;
-        border: solid 3px #5a5b6d;
-        font-size: 15px;
+        width: 5.8125rem;
+        height: 2rem;
+        border-radius: 0.625rem;
+        background-color: $darkgrey;
+        border: solid 3px $darkgrey;
+        font-size: 0.9375rem;
         font-family: dbold;
         color: $white;
-        margin: 0 35px 0 0;
+        margin: 0 2.1875rem 0 0;
         cursor: pointer;
 
         &:hover {
-          border: solid 3px #cf2e8b;
+          border: solid 3px $pink;
         }
       }
 
       &--up {
         background-image: url(../../assets/icons/up.svg);
         cursor: pointer;
-        height: 23px;
-        width: 23px;
+        height: 1.4375rem;
+        width: 1.4375rem;
         border: none;
         background-color: $grey;
         background-repeat: no-repeat;
       }
 
       &--alert {
-        width: 29px;
-        height: 29px;
+        width: 1.8125rem;
+        height: 1.8125rem;
         position: relative;
-        left: 30px;
-        margin-right: -50px;
+        left: 1.875rem;
+        margin-right: -3.125rem;
       }
     }
 
     &--boxed {
       background-color: $grey;
-      width: 863px;
-      height: 69px;
-      border-radius: 10px;
+      width: 53.9375rem;
+      height: 4.3125rem;
+      border-radius: 0.625rem;
       display: flex;
       align-items: center;
-      margin: 0 0 25px 0;
-      border-left: solid 4px #cf2e8b;
+      margin: 0 0 1.5625rem 0;
+      border-left: solid 4px $pink;
 
       &--texting {
         font-family: dbold;
-        font-size: 25px;
+        font-size: 1.5625rem;
         color: $white;
         @include nomargin-nopadding;
-        margin: 0 10.4rem 0 24px;
+        margin: 0 10.4rem 0 1.5rem;
       }
 
       &--button {
-        width: 93px;
-        height: 32px;
-        border-radius: 10px;
-        background-color: #5a5b6d;
-        border: solid 3px #5a5b6d;
-        font-size: 15px;
+        width: 5.8125rem;
+        height: 2rem;
+        border-radius: 0.625rem;
+        background-color: $darkgrey;
+        border: solid 0.1875rem $darkgrey;
+        font-size: 0.9375rem;
         font-family: dbold;
         color: $white;
-        margin: 0 35px 0 0;
+        margin: 0 2.1875rem 0 0;
         cursor: pointer;
 
         &:hover {
-          border: solid 3px #cf2e8b;
+          border: solid 3px $pink;
         }
       }
 
       &--alert {
-        width: 29px;
-        height: 29px;
+        width: 1.8125rem;
+        height: 1.8125rem;
         position: relative;
-        left: 30px;
-        margin-right: -50px;
+        left: 1.875rem;
+        margin-right: -3.125rem;
       }
     }
 
     &--back {
-      width: 776px;
-      height: 315px;
+      width: 48.5rem;
+      height: 19.6875rem;
       background-color: $grey;
-      border-radius: 10px;
+      border-radius: 0.625rem;
 
       &--first {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 0 0 0 33px;
-        padding: 19px 0 0 0;
+        margin: 0 0 0 2.0625rem;
+        padding: 1.1875rem 0 0 0;
 
         &--you {
           margin: 0;
@@ -302,33 +302,33 @@
           &--text {
             font-family: dbold;
             color: $white;
-            font-size: 25px;
+            font-size: 1.5625rem;
             @include nomargin-nopadding;
           }
 
           &--image {
-            width: 29px;
-            height: 29px;
-            margin: 0 0 0 8px;
+            width: 1.8125rem;
+            height: 1.8125rem;
+            margin: 0 0 0 0.5rem;
           }
         }
 
         &--text {
           color: $white;
           font-family: dregular;
-          font-size: 15px;
+          font-size: 0.9375rem;
           @include nomargin-nopadding;
 
           &--bold {
             font-family: dbold;
-            font-size: 15px;
+            font-size: 0.9375rem;
           }
         }
 
         &--image {
-          width: 14px;
-          height: 14px;
-          margin: 0 28px 0 0;
+          width: 0.875rem;
+          height: 0.875rem;
+          margin: 0 1.75rem 0 0;
           cursor: pointer;
         }
       }
@@ -338,7 +338,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 0 0 0 33px;
+        margin: 0 0 0 2.0625rem;
 
         &--renew {
           display: flex;
@@ -348,24 +348,24 @@
 
           &--button {
             background-color: $othergrey;
-            border-radius: 15px;
+            border-radius: 0.9375rem;
             border: none;
-            height: 49px;
-            width: 134px;
+            height: 3.0625rem;
+            width: 8.375rem;
             font-family: dbold;
-            font-size: 19.3px;
+            font-size: 1.2063rem;
             color: $white;
-            margin: 0 0 8px 0;
+            margin: 0 0 0.5rem 0;
             cursor: pointer;
           }
         }
 
         &--box {
-          height: 242px;
-          width: 525px;
+          height: 15.125rem;
+          width: 32.8125rem;
           background-color: rgba(217, 217, 217, 0.1);
-          margin: 0 48px 0 0;
-          border-radius: 15px;
+          margin: 0 3rem 0 0;
+          border-radius: 0.9375rem;
 
           &--chart {
             display: flex;
@@ -374,30 +374,30 @@
             align-items: center;
 
             &--graph {
-              height: 136px;
-              width: 456px;
-              margin: 19px 0 0 0;
+              height: 8.5rem;
+              width: 28.5rem;
+              margin: 1.1875rem 0 0 0;
             }
 
             &--impressions {
               display: flex;
               flex-direction: row;
-              gap: 8px;
-              margin: 18.6px 0 0 0;
+              gap: 0.5rem;
+              margin: 1.1625rem 0 0 0;
 
               &--button {
                 background-color: $darkblue;
                 color: $white;
-                border-radius: 15px;
+                border-radius: 0.9375rem;
                 border: solid 3px $darkblue;
                 font-family: dbold;
-                font-size: 14px;
+                font-size: 0.875rem;
                 width: 6.5rem;
-                height: 44px;
+                height: 2.75rem;
                 text-transform: capitalize;
 
                 &:hover {
-                  border: solid 3px #cf2e8b;
+                  border: solid 3px $pink;
                   cursor: pointer;
                 }
               }
@@ -408,26 +408,26 @@
     }
 
     &--third {
-      height: 69px;
-      width: 776px;
-      border-radius: 15px;
+      height: 4.3125rem;
+      width: 48.5rem;
+      border-radius: 0.9375rem;
       background-color: $grey;
-      margin: 20px 0 20px 0;
+      margin: 1.25rem 0 1.25rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       &--text {
-        margin: 0 0 0 33px;
+        margin: 0 0 0 2.0625rem;
         font-family: dbold;
-        font-size: 25px;
+        font-size: 1.5625rem;
         color: $white;
       }
 
       &--image {
-        height: 14px;
-        width: 14px;
-        margin: 0 28px 0 0;
+        height: 0.875rem;
+        width: 0.875rem;
+        margin: 0 1.75rem 0 0;
         background-image: url(../../assets/icons/up.svg);
         cursor: pointer;
         background-size: contain;

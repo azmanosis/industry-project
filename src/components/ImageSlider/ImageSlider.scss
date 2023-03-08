@@ -23,8 +23,7 @@
   overflow-x: scroll;
   display: flex;
   flex-direction: row;
-  //   height: 20rem;
-  border-radius: 13px;
+  border-radius: 0.8125rem;
   gap: 5%;
 
   &__item {
@@ -32,7 +31,7 @@
 
     &--image {
       width: 30rem;
-      border-radius: 13px;
+      border-radius: 0.8125rem;
     }
 
     &--column {
@@ -43,7 +42,7 @@
 
       &--text {
         color: $white;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: dbold;
       }
 
@@ -51,7 +50,7 @@
         padding: 0;
         color: $othergrey;
         font-family: dbold;
-        font-size: 10px;
+        font-size: 0.625rem;
         margin: 0 0 1rem 0;
         text-transform: uppercase;
       }

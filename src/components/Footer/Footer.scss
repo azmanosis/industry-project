@@ -3,14 +3,14 @@
 .footer {
   display: flex;
   flex-direction: row;
-  height: 200px;
+  height: 12.5rem;
   width: 100%;
   background-color: $grey;
   @include nomargin_nopadding;
 
   &__logo {
-    width: 41px;
-    height: 41px;
+    width: 2.5625rem;
+    height: 2.5625rem;
     @include nomargin_nopadding;
     margin: 1rem 0 0 8.6875rem;
   }
@@ -107,13 +107,13 @@
     margin: 1rem 2rem 0 5rem;
 
     &--box {
-      width: 191px;
-      height: 60px;
+      width: 11.9375rem;
+      height: 3.75rem;
       border-radius: 3px;
       border: solid 2px #bababa;
 
       &--text {
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: $white;
         font-family: dregular;
         margin: 0.5rem 0 0 1rem;
@@ -126,12 +126,12 @@
 
         &--image {
           margin: 0.5rem 0 0 1rem;
-          width: 18px;
-          height: 10.7px;
+          width: 1.125rem;
+          height: 0.6687rem;
         }
 
         &--canada {
-          font-size: 15px;
+          font-size: 0.9375rem;
           margin: 0.5rem 0 0 1rem;
           color: $white;
         }
