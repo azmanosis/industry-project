@@ -1,0 +1,310 @@
+@use "../../styles/partials/index" as *;
+
+.dashboard {
+  margin: 1rem 0 2.4375rem 7.375rem;
+  display: flex;
+  flex-direction: row;
+
+  &__text {
+    color: $white;
+    font-family: dbold;
+    font-size: 40px;
+    @include nomargin-nopadding;
+    margin-top: 1.875rem;
+  }
+
+  &__alert {
+    width: 547px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgba(212, 152, 185, 0.53);
+    margin: 1.8125rem 133px 0 3.1875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &--icon {
+      margin: 0;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--text {
+      margin: 0 0 0 23px;
+      color: $white;
+      font-family: dbold;
+    }
+
+    &--open {
+      margin: 0 0 0 76px;
+      text-transform: uppercase;
+      color: $white;
+      background: none;
+      border: none;
+      font-family: dbold;
+
+      &:hover {
+        border-bottom: solid 1px $white;
+        cursor: pointer;
+      }
+    }
+
+    &--close {
+      position: relative;
+      top: -30px;
+      right: -32px;
+      cursor: pointer;
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  margin: 0 0 0 7.375rem;
+
+  &__header {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    // align-items: center;
+    width: 237px;
+    margin: 0;
+
+    &--top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &--image {
+        width: 111px;
+        height: 111px;
+      }
+
+      &--text {
+        font-family: dbold;
+        @include nomargin-nopadding;
+        text-transform: uppercase;
+        color: $othergrey;
+      }
+    }
+
+    &--management {
+      margin: 1.3125rem 0 0 0;
+
+      &--text {
+        font-family: dbold;
+        font-size: 26px;
+        color: $white;
+        @include nomargin-nopadding;
+      }
+
+      &--panel {
+        height: 422px;
+        border-radius: 15px;
+        background-color: $grey;
+        margin: 7px 0 67px 0;
+        padding: 15px 0 0 0;
+
+        &--link {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: left;
+          height: 40px;
+          margin: 4px 0 0 0;
+          border-left: solid 3px $grey;
+          text-decoration: none;
+
+          &:hover {
+            background-color: rgba(207, 46, 139, 0.5);
+            cursor: pointer;
+            border-left: solid 3px #f142a7;
+          }
+
+          &--image {
+            margin: 0 8px 0 16px;
+            width: 22px;
+            height: 16px;
+          }
+
+          &--text {
+            color: $white;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+
+          &--alert {
+            width: 25px;
+            height: 25px;
+            margin: 0 0 0 11px;
+          }
+        }
+
+        &--linkstext {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: left;
+          height: 40px;
+          margin: 4px 0 0 0;
+          border-left: solid 3px #f142a7;
+          background-color: rgba(207, 46, 139, 0.5);
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__revenue {
+    margin: 0 0 0 20px;
+
+    &--stats {
+      display: flex;
+      flex-direction: row;
+
+      &--a {
+        display: flex;
+        flex-direction: column;
+
+        &--text {
+          color: $white;
+          font-family: dbold;
+          font-size: 26px;
+          margin: 0;
+          height: 44px;
+        }
+
+        &--img {
+          margin: 0;
+        }
+
+        &--result {
+          display: flex;
+          justify-content: center;
+
+          &--unit {
+            color: $othergrey;
+          }
+        }
+      }
+
+      &--b {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 1.2rem;
+
+        &--row {
+          display: flex;
+          flex-direction: row;
+          width: 380px;
+          height: 40px;
+
+          &--text {
+            color: $white;
+            width: 235px;
+            font-family: dbold;
+            font-size: 26px;
+            @include nomargin-nopadding;
+          }
+
+          &--date {
+            color: $othergrey;
+            font-family: dbold;
+            width: 103px;
+            @include nomargin-nopadding;
+            font-size: 12px;
+            margin: 0.9rem 0 0 31px;
+          }
+        }
+
+        &--img {
+          margin: 0;
+        }
+      }
+    }
+
+    &--upcoming {
+      margin: 0;
+
+      &--text {
+        font-family: dbold;
+        font-size: 28px;
+        color: $white;
+        text-transform: capitalize;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+
+  &__mystats {
+    width: 184px;
+
+    &--text {
+      font-family: dbold;
+      font-size: 26px;
+      color: $white;
+      @include nomargin-nopadding;
+    }
+
+    &--box {
+      background-color: $grey;
+      width: 184px;
+      height: 284px;
+      margin: 7px 0 0 0;
+      border-radius: 15px;
+      padding: 13px 0 0 23.5px;
+
+      &--a {
+        color: $white;
+        font-family: dbold;
+        font-size: 10px;
+        @include nomargin-nopadding;
+        text-transform: uppercase;
+      }
+
+      &--b {
+        color: #cedeff;
+        font-family: dbold;
+        font-size: 18px;
+        height: 23px;
+        margin: 0 0 9px 0;
+        padding: 0;
+      }
+    }
+
+    &--stream {
+      background-color: $grey;
+      border: none;
+      border-radius: 10px;
+      width: 184px;
+      height: 50px;
+      margin: 41px 0 0 0;
+      color: $white;
+      font-family: dbold;
+      font-size: 20px;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+
+    &--streamed {
+      background-color: $grey;
+      border: none;
+      border-radius: 10px;
+      width: 184px;
+      height: 50px;
+      margin: 1rem 0 0 0;
+      color: $white;
+      font-family: dbold;
+      font-size: 20px;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+}

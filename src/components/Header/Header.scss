@@ -1,6 +1,75 @@
 @use "../../styles/partials/index" as *;
 
 .header {
+  height: 134px;
   display: flex;
+  flex-direction: row;
+  background-color: $grey;
+  align-items: center;
   justify-content: space-between;
+
+  &__logo {
+    margin: 2.5625rem 0 0.25rem 7.375rem;
+
+    &--logo {
+      width: 82px;
+      height: 82px;
+    }
+  }
+
+  &__subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77.5rem;
+    margin: 2rem 0 0 5rem;
+
+    &--creator {
+      text-transform: uppercase;
+      color: $white;
+      font-family: dbold;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    &--input {
+      width: 384px;
+      height: 40px;
+      border-radius: 1rem;
+      border: solid 0.25rem $grey;
+      background-color: $white;
+      font-size: 1rem;
+      color: $darkblue;
+      padding: 0 0 0 2rem;
+      background-image: url(../../assets/icons/search.svg);
+      background-repeat: no-repeat;
+      background-position-x: 0.5rem;
+      background-position-y: center;
+      font-family: dmedium;
+      margin: 0;
+
+      &::placeholder {
+        color: $grey;
+      }
+    }
+
+    &--link {
+      margin: 0 8.25rem 0 0;
+
+      &--dashboard {
+        text-transform: uppercase;
+        border: none;
+        background-color: $grey;
+        font-family: dmedium;
+        color: $white;
+        margin: 0 1rem;
+        border-bottom: solid 0.25rem $grey;
+
+        &:hover {
+          border-bottom: solid 0.25rem $darkblue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
