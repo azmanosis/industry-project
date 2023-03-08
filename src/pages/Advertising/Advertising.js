@@ -1,4 +1,5 @@
 import './Advertising.scss';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Alert from '../../assets/icons/alert.svg';
 import Close from '../../assets/icons/close.svg';
@@ -17,6 +18,22 @@ import Down from '../../assets/icons/down.svg';
 import Graph from '../../assets/icons/graph.svg';
 
 function Advertising() {
+    const [isVisible, setIsVisible] = useState(false);
+    const [isViewable, setIsViewable] = useState(false);
+    const [isSeen, setIsSeen] = useState(false);
+
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+    };
+
+    const toggleViewability = () => {
+        setIsViewable(!isViewable);
+    };
+
+    const toggleSeen = () => {
+        setIsSeen(!isSeen);
+    }
+
     return (
         <>
             <div className="dashboards">
@@ -91,8 +108,47 @@ function Advertising() {
                         <Link to="https://www.tiktok.com/en/" target="_blank">
                             <button className="profiles__advertising--box--button">TikTok</button>
                         </Link>
-                        <img className="profiles__advertising--box--up" src={Up} alt="" />
+                        <button onClick={toggleVisibility} className="profiles__advertising--box--up"></button>
                     </div>
+                    {isVisible &&
+                        <div>
+                            <div className="profiles__advertising--back">
+                                <div className="profiles__advertising--back--first">
+                                    <div className="profiles__advertising--back--first--you">
+                                        <p className="profiles__advertising--back--first--you--text">YouTube</p>
+                                    </div>
+                                    <p className="profiles__advertising--back--first--text">Your <span className="profiles__advertising--back--first--text--bold">YouTube Account</span> is performing well!</p>
+                                    <img className="profiles__advertising--back--first--image" src={Down} alt="" />
+                                </div>
+                                <div className="profiles__advertising--back--second">
+                                    <div className="profiles__advertising--back--second--renew">
+                                        <button className="profiles__advertising--back--second--renew--button">Renew</button>
+                                        <button className="profiles__advertising--back--second--renew--button">Manage</button>
+                                    </div>
+                                    <div className="profiles__advertising--back--second--box">
+                                        <div className="profiles__advertising--back--second--box--chart">
+                                            <img className="profiles__advertising--back--second--box--chart--graph" src={Graph} alt="" />
+                                            <div className="profiles__advertising--back--second--box--chart--impressions">
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">Facebook</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">TikTok</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
+                        </div>
+                    }
                     <div className="profiles__advertising--box">
                         <p className="profiles__advertising--box--texted">SallyStreamer v.APRICOT</p>
                         <Link to="https://www.youtube.com/" target="_blank">
@@ -104,8 +160,46 @@ function Advertising() {
                         <Link to="https://www.tiktok.com/en/" target="_blank">
                             <button className="profiles__advertising--box--button">TikTok</button>
                         </Link>
-                        <img className="profiles__advertising--box--up" src={Up} alt="" />
+                        <button onClick={toggleViewability} className="profiles__advertising--box--up" src={Up} alt=""></button>
                     </div>
+                    {isViewable &&
+                        <div>
+                            <div className="profiles__advertising--back">
+                                <div className="profiles__advertising--back--first">
+                                    <div className="profiles__advertising--back--first--you">
+                                        <p className="profiles__advertising--back--first--you--text">YouTube</p>
+                                    </div>
+                                    <p className="profiles__advertising--back--first--text">Your <span className="profiles__advertising--back--first--text--bold">YouTube Account</span> is performing well!</p>
+                                    <img className="profiles__advertising--back--first--image" src={Down} alt="" />
+                                </div>
+                                <div className="profiles__advertising--back--second">
+                                    <div className="profiles__advertising--back--second--renew">
+                                        <button className="profiles__advertising--back--second--renew--button">Renew</button>
+                                        <button className="profiles__advertising--back--second--renew--button">Manage</button>
+                                    </div>
+                                    <div className="profiles__advertising--back--second--box">
+                                        <div className="profiles__advertising--back--second--box--chart">
+                                            <img className="profiles__advertising--back--second--box--chart--graph" src={Graph} alt="" />
+                                            <div className="profiles__advertising--back--second--box--chart--impressions">
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">Facebook</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">TikTok</p>
+                                <div className="profiles__advertising--third--image" src={Up} alt=""></div>
+                            </div>
+                        </div>
+                    }
                     <div className="profiles__advertising--boxed">
                         <p className="profiles__advertising--boxed--texting">SallyStreamer v.ACIE</p>
                         <Link to="https://www.youtube.com/" target="_blank">
@@ -117,45 +211,48 @@ function Advertising() {
                         <Link to="https://www.tiktok.com/en/" target="_blank">
                             <button className="profiles__advertising--boxed--button">TikTok</button>
                         </Link>
-                        <img className="profiles__advertising--box--up" src={Down} alt="" />
+                        <button onClick={toggleSeen} className="profiles__advertising--box--up" src={Down} alt=""></button>
                         <img src={Alert} className="profiles__advertising--boxed--alert" alt="" />
                     </div>
-                    <div className="profiles__advertising--back">
-                        <div className="profiles__advertising--back--first">
-                            <div className="profiles__advertising--back--first--you">
-                                <p className="profiles__advertising--back--first--you--text">YouTube</p>
-                                <img src={Alert} className="profiles__advertising--back--first--you--image" alt="" />
-                            </div>
-                            <p className="profiles__advertising--back--first--text">Your ad will expire in 3 days! <span className="profiles__advertising--back--first--text--bold">Renew</span> now!</p>
-                            <img className="profiles__advertising--back--first--image" src={Down} alt="" />
-                        </div>
-                        <div className="profiles__advertising--back--second">
-                            <div className="profiles__advertising--back--second--renew">
-                                <button className="profiles__advertising--back--second--renew--button">Renew</button>
-                                <button className="profiles__advertising--back--second--renew--button">Manage</button>
-                            </div>
-                            <div className="profiles__advertising--back--second--box">
-                                <div className="profiles__advertising--back--second--box--chart">
-                                    <img className="profiles__advertising--back--second--box--chart--graph" src={Graph} alt="" />
-                                    <div className="profiles__advertising--back--second--box--chart--impressions">
-                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
-                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
-                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
-                                        <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
+                    {isSeen &&
+                        <div>
+                            <div className="profiles__advertising--back">
+                                <div className="profiles__advertising--back--first">
+                                    <div className="profiles__advertising--back--first--you">
+                                        <p className="profiles__advertising--back--first--you--text">YouTube</p>
+                                        <img src={Alert} className="profiles__advertising--back--first--you--image" alt="" />
+                                    </div>
+                                    <p className="profiles__advertising--back--first--text">Your ad will expire in 3 days! <span className="profiles__advertising--back--first--text--bold">Renew</span> now!</p>
+                                    <img className="profiles__advertising--back--first--image" src={Down} alt="" />
+                                </div>
+                                <div className="profiles__advertising--back--second">
+                                    <div className="profiles__advertising--back--second--renew">
+                                        <button className="profiles__advertising--back--second--renew--button">Renew</button>
+                                        <button className="profiles__advertising--back--second--renew--button">Manage</button>
+                                    </div>
+                                    <div className="profiles__advertising--back--second--box">
+                                        <div className="profiles__advertising--back--second--box--chart">
+                                            <img className="profiles__advertising--back--second--box--chart--graph" src={Graph} alt="" />
+                                            <div className="profiles__advertising--back--second--box--chart--impressions">
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">Facebook</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
+                            <div className="profiles__advertising--third">
+                                <p className="profiles__advertising--third--text">TikTok</p>
+                                <div className="profiles__advertising--third--image"></div>
+                            </div>
                         </div>
-
-                    </div>
-                    <div className="profiles__advertising--third">
-                        <p className="profiles__advertising--third--text">Facebook</p>
-                        <img className="profiles__advertising--third--image" src={Up} alt="" />
-                    </div>
-                    <div className="profiles__advertising--third">
-                        <p className="profiles__advertising--third--text">TikTok</p>
-                        <img className="profiles__advertising--third--image" src={Up} alt="" />
-                    </div>
+                    }
                 </div>
             </div>
         </>
