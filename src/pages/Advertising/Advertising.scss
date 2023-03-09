@@ -420,6 +420,23 @@
                   cursor: pointer;
                 }
               }
+
+              &--buttoned {
+                background-color: $darkblue;
+                color: $white;
+                border-radius: 0.9375rem;
+                border: solid 3px $pink;
+                font-family: dbold;
+                font-size: 0.875rem;
+                width: 6.5rem;
+                height: 2.75rem;
+                text-transform: capitalize;
+
+                &:hover {
+                  border: solid 3px $pink;
+                  cursor: pointer;
+                }
+              }
             }
           }
         }

@@ -135,7 +135,7 @@ function Advertising() {
                                             <div className="profiles__advertising--back--second--box--chart--impressions">
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
-                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--buttoned">clicks</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
                                             </div>
                                         </div>
@@ -183,7 +183,7 @@ function Advertising() {
                                             <div className="profiles__advertising--back--second--box--chart--impressions">
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
-                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--buttoned">clicks</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
                                             </div>
                                         </div>
@@ -236,7 +236,7 @@ function Advertising() {
                                             <div className="profiles__advertising--back--second--box--chart--impressions">
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">impressions</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">conversions</button>
-                                                <button className="profiles__advertising--back--second--box--chart--impressions--button">clicks</button>
+                                                <button className="profiles__advertising--back--second--box--chart--impressions--buttoned">clicks</button>
                                                 <button className="profiles__advertising--back--second--box--chart--impressions--button">cost</button>
                                             </div>
                                         </div>
