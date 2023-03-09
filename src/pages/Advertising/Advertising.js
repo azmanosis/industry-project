@@ -41,7 +41,7 @@ function Advertising() {
                 <div className="dashboards__alerts">
                     <img className="dashboards__alerts--icons" src={Alert} alt="alert" />
                     <p className="dashboards__alerts--texts">ALERT: One of your Ad is expiring soon!</p>
-                    <Link to="/">
+                    <Link to="/error">
                         <button className="dashboards__alerts--opens">open ads</button>
                     </Link>
                     <img className="dashboards__alerts--closes" src={Close} alt="close" />
@@ -61,15 +61,15 @@ function Advertising() {
                                 <img className="profiles__headers--managements--panels--links--images" src={Dashboard} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">dashboard</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Stream} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">stream manager</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Uploads} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">uploads</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Analytics} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">analytics</button>
                             </Link>
@@ -77,19 +77,19 @@ function Advertising() {
                                 <img className="profiles__headers--managements--panels--links--images" src={Advertise} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">advertising</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Earnings} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">earnings</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Tax} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">tax</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Copyright} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">copyright</button>
                             </Link>
-                            <Link className="profiles__headers--managements--panels--links" to="/">
+                            <Link className="profiles__headers--managements--panels--links" to="/error">
                                 <img className="profiles__headers--managements--panels--links--images" src={Settings} alt="" />
                                 <button className="profiles__headers--managements--panels--links--texts">settings</button>
                             </Link>
