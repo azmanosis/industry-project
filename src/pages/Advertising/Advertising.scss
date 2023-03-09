@@ -4,6 +4,7 @@
   margin: 1rem 0 2.4375rem 7.375rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   &__texts {
     color: $white;
@@ -67,7 +68,7 @@
     font-size: 1.875rem;
     font-family: dbold;
     color: $white;
-    margin: 1rem 0 0 0;
+    margin: 1rem 8.25rem 0 0;
     cursor: pointer;
   }
 }
@@ -75,7 +76,8 @@
 .profiles {
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 7.375rem;
+  justify-content: space-between;
+  margin: 0 8.25rem 0 7.375rem;
   height: 100%;
 
   &__headers {

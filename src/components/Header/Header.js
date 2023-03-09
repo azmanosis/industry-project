@@ -22,10 +22,10 @@ function Header() {
                     <Link to="/">
                         <button className="header__subject--link--dashboard">EA Home</button>
                     </Link>
-                    <Link to="/">
+                    <Link to="/error">
                         <button className="header__subject--link--dashboard">support</button>
                     </Link>
-                    <Link to="/">
+                    <Link to="/error">
                         <button className="header__subject--link--dashboard">account</button>
                     </Link>
                 </div>
