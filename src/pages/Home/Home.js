@@ -25,7 +25,7 @@ function Home() {
                 <div className="dashboard__alert">
                     <img className="dashboard__alert--icon" src={Alert} alt="alert" />
                     <p className="dashboard__alert--text">ALERT: One of your Ad is expiring soon!</p>
-                    <Link to="/">
+                    <Link to="/error">
                         <button className="dashboard__alert--open">open ads</button>
                     </Link>
                     <img className="dashboard__alert--close" src={Close} alt="close" />
@@ -44,15 +44,15 @@ function Home() {
                                 <img className="profile__header--management--panel--link--image" src={Dashboard} alt="" />
                                 <button className="profile__header--management--panel--link--text">dashboard</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Stream} alt="" />
                                 <button className="profile__header--management--panel--link--text">stream manager</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Uploads} alt="" />
                                 <button className="profile__header--management--panel--link--text">uploads</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Analytics} alt="" />
                                 <button className="profile__header--management--panel--link--text">analytics</button>
                             </Link>
@@ -61,19 +61,19 @@ function Home() {
                                 <button className="profile__header--management--panel--link--text">advertising</button>
                                 <img className="profile__header--management--panel--link--alert" src={Alert} alt="" />
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Earnings} alt="" />
                                 <button className="profile__header--management--panel--link--text">earnings</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Tax} alt="" />
                                 <button className="profile__header--management--panel--link--text">tax</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Copyright} alt="" />
                                 <button className="profile__header--management--panel--link--text">copyright</button>
                             </Link>
-                            <Link className="profile__header--management--panel--link" to="/">
+                            <Link className="profile__header--management--panel--link" to="/error">
                                 <img className="profile__header--management--panel--link--image" src={Settings} alt="" />
                                 <button className="profile__header--management--panel--link--text">settings</button>
                             </Link>
