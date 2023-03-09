@@ -269,6 +269,23 @@
         }
       }
 
+      &--buttoned {
+        width: 5.8125rem;
+        height: 2rem;
+        border-radius: 0.9375rem;
+        background-color: rgba(212, 152, 185, 0.53);
+        border: solid 0.1875rem rgba(212, 152, 185, 0.53);
+        font-size: 0.9375rem;
+        font-family: dbold;
+        color: $white;
+        margin: 0 2.1875rem 0 0;
+        cursor: pointer;
+
+        &:hover {
+          border: solid 3px $pink;
+        }
+      }
+
       &--alert {
         width: 1.8125rem;
         height: 1.8125rem;

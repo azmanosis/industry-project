@@ -203,7 +203,7 @@ function Advertising() {
                     <div className="profiles__advertising--boxed">
                         <p className="profiles__advertising--boxed--texting">SallyStreamer v.ACIE</p>
                         <Link to="https://www.youtube.com/" target="_blank">
-                            <button className="profiles__advertising--boxed--button">YouTube</button>
+                            <button className="profiles__advertising--boxed--buttoned">YouTube</button>
                         </Link>
                         <Link to="https://www.facebook.com/" target="_blank">
                             <button className="profiles__advertising--boxed--button">Facebook</button>
