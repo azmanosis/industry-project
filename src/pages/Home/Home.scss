@@ -62,7 +62,8 @@
 .profile {
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 7.375rem;
+  justify-content: space-between;
+  margin: 0 8.25rem 0 7.375rem;
 
   &__header {
     display: flex;
