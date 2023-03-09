@@ -35,14 +35,14 @@ function ImageSlider() {
                         <img className="slider__item--image" src={image1} alt="" />
                         <div className="slider__item--column">
                             <div className="slider__item--column--text">SallyStreamer v.APRICOT</div>
-                            <div className="slider__item--column--txt">EA Stream - monday March 14, 2022</div>
+                            <div className="slider__item--column--txt">EA Stream - monday March 14, 2023</div>
                         </div>
                     </div>
                     <div className="slider__item">
                         <img className="slider__item--image" src={image2} alt="" />
                         <div className="slider__item--column">
                             <div className="slider__item--column--text">SallyStreamer v. ACIE</div>
-                            <div className="slider__item--column--txt">EA Stream - Friday March 17, 2022</div>
+                            <div className="slider__item--column--txt">EA Stream - Friday March 17, 2023</div>
                         </div>
                     </div>
                     <div className="slider__item">
