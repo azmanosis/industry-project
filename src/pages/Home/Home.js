@@ -25,7 +25,7 @@ function Home() {
                 <div className="dashboard__alert">
                     <img className="dashboard__alert--icon" src={Alert} alt="alert" />
                     <p className="dashboard__alert--text">ALERT: One of your Ad is expiring soon!</p>
-                    <Link to="/error">
+                    <Link to="/advertising">
                         <button className="dashboard__alert--open">open ads</button>
                     </Link>
                     <img className="dashboard__alert--close" src={Close} alt="close" />
